@@ -1,0 +1,16 @@
+log_level: INFO
+
+host: 0.0.0.0
+port: 8080
+
+max_workers: 4
+
+models_path: /path/to/models
+
+language_models:
+  - source: it
+    target: en
+    model: Helsinki-NLP/opus-mt-it-en
+  - source: fr
+    target: en
+    model: Helsinki-NLP/opus-mt-fr-en
